@@ -1,7 +1,16 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
-
+type User={
+  title:string,
+  likes: number,
+  accounts: [],
+  status: 'open'|'close',
+  details?: {
+    createAt: Date,
+    updateAt: Date,
+  }
+}
 const page1 = {
   title: 'The awesome page',
   likes: 100,
@@ -20,4 +29,4 @@ const page2 = {
   status: 'close',
 }
 
-export {};
+export {User,page1,page2};
